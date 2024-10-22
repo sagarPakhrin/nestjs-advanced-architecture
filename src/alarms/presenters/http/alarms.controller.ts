@@ -16,6 +16,7 @@ export class AlarmsController {
 
   @Get()
   findAll() {
+    console.log('VISITED');
     return this.alarmsService.findAll();
   }
 }
