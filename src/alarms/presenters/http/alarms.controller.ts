@@ -9,7 +9,6 @@ export class AlarmsController {
 
   @Post()
   create(@Body() createAlarmDto: CreateAlarmDto) {
-    console.log('DTO', createAlarmDto);
     return this.alarmsService.create(
       new CreateAlarmCommand(
         createAlarmDto.name,
@@ -22,7 +21,6 @@ export class AlarmsController {
 
   @Get()
   findAll() {
-    console.log('VISITED');
     return this.alarmsService.findAll();
   }
 }
