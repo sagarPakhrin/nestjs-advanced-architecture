@@ -1,12 +1,10 @@
-import { Column, PrimaryColumn } from 'typeorm';
+import { AlarmItemEntity } from './alarm-item.entity';
 
 export class AlarmEntity {
-  @PrimaryColumn('uuid')
   id: string;
-
-  @Column()
   name: string;
-
-  @Column()
   severity: string;
+  triggedAt: Date;
+  isAcknowledged: boolean;
+  items: AlarmItemEntity[];
 }
