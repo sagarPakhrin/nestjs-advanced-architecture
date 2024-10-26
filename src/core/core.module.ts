@@ -8,8 +8,8 @@ import { EVENT_STORE_CONNECTION } from './constants';
   imports: [
     // MongooseModule.forRoot('mongodb://localhost:27018/vf-read-db', {
     MongooseModule.forRoot(
-      'mongodb+srv://sagar:SagarLama123@event-sourcing.ajbel.mongodb.net/?retryWrites=true&w=majority&appName=event-sourcing',
-      // 'mongodb+srv://sagar:sagar@123#@event-sourcing.ajbel.mongodb.net/?retryWrites=true&w=majority&appName=event-sourcing',
+      // 'mongodb+srv://sagar:SagarLama123@event-sourcing.ajbel.mongodb.net/?retryWrites=true&w=majority&appName=event-sourcing',
+      'mongodb+srv://sagar:SagarLama123@event-sourcing.holix.mongodb.net/?retryWrites=true&w=majority&appName=event-sourcing',
       {
         connectionName: EVENT_STORE_CONNECTION,
         serverApi: {
