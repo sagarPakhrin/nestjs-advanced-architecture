@@ -4,4 +4,8 @@ export class AlarmSeverity {
   equals(other: AlarmSeverity): boolean {
     return this.value === other.value;
   }
+
+  toJSON() {
+    return this.value;
+  }
 }
